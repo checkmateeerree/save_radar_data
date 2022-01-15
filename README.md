@@ -9,7 +9,7 @@
     - You can download python here: https://www.python.org/downloads/
     - When you are on the installer, make sure you check off the box at the bottom that says "Add Python 3.{version_num} to PATH". * THIS IS VERY IMPORTANT *
 - Have the libraries needed to run the script
-    - if you have python downloaded but not the libraries, just go to windows cmd or bash (on mac) and type in pip install -r requirements.txt to install the libraries.
+    - if you have python downloaded but not the libraries, just go to windows cmd or bash (on mac), navigate to the directory that you downloaded this project in (i.e. C:\Users\{user_name}\Downloads\save_radar_data-main) and type in pip install -r requirements.txt to install the libraries.
 
 
 ## After setting up
