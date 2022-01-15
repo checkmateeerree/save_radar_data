@@ -1,5 +1,7 @@
 # A python script that allows you to save radar data you get from testing the Arduino
 
+## IMPORTANT NOTE: RUN THE ARDUINO CODE ON THE ARDUINO FIRST AND ENSURE THAT IT IS COLLECTING DATA (YOU CAN VERIFY THIS BY MOVING AND SEEING IF IT IS FLASHING LIGHTS AS YOU MOVE) BEFORE RUNNING THIS SCRIPT 
+
 ## Setup
 
 ### Requirements you need to run the script
