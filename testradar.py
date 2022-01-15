@@ -9,7 +9,7 @@ import os.path
 import argparse
 import json
 
-def find_port(ports):
+def find_arduino_com_port(ports):
     #finds COM port that the Arduino is on (assumes only one Arduino is connected)
     for port in ports:
         # port.Name, port.DeviceID, port.Name properties
@@ -136,8 +136,7 @@ if __name__ == "__main__":
     parser.add_argument('--delete_last', action="store_true",
                         help='''delete last testing data stored, 
                                 if there's something wrong with it.
-                            '''
-                        )
+                            ''')
 
     args = parser.parse_args()
     
@@ -153,9 +152,9 @@ if __name__ == "__main__":
     type_of_data = args.type
         
     ports = serial.tools.list_ports.comports()
-    com_port = find_port(ports)
+    arduino_com_port = find_arduino_comport(ports)
 
-    ser = serial.Serial(com_port, 115200, timeout=0.05) #sets up serial connection (make sure baud rate is correct - matches Arduino)
+    ser = serial.Serial(arduino_com_port, 115200, timeout=0.05) #sets up serial connection (make sure baud rate is correct - matches Arduino)
 
     connect(ser)
     

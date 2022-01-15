@@ -1,4 +1,5 @@
 serial
+pyserial
 matplotlib
 numpy
 argparse
