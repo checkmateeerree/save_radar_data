@@ -24,17 +24,11 @@ usage: python testradar.py [-h] [--length LENGTH]
                     [--type {car,biker,walker}]    
                     [--delete_last]
 
-Capture Arduino Serial data and graph it, and      
-store the data.
-
 optional arguments:
-  -h, --help            show this help message     
-                        and exit
-  --length LENGTH       number of data points you  
-                        want to collect
-  --type {car,biker,walker}
-                        three options: car,        
-                        biker, or walker
-  --delete_last         delete last testing data   
-                        stored, if there's
-                        something wrong with it.
+-  -h, --help  show this help message and exit
+-  --length LENGTH number of data points you want to collect
+-  --type {car,biker,walker} Three options:
+    - car,        
+    - biker
+    - walker
+-  --delete_last delete last testing data    stored, if there's something wrong with it.
