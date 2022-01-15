@@ -12,7 +12,7 @@ import json
 def find_port(ports):
     #finds COM port that the Arduino is on (assumes only one Arduino is connected)
     for port in ports:
-        #print port.Name #port.DeviceID, port.Name
+        # port.Name, port.DeviceID, port.Name properties
         if "JLink" in port.description:
             comPort = port.name
     

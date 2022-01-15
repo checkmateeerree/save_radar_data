@@ -1,0 +1,4 @@
+serial
+matplotlib
+numpy
+argparse
