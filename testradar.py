@@ -118,6 +118,7 @@ def save_num_data(x, y, z, new_dir):
     rows = list(zip(x, y, z))
     
     with open(new_dir + "/data.txt", "w") as data_file:
+        data_file.write("Speed \t Doppler Level \t Doppler Frequency \n")
         for line in rows:
             for i in line:
                 data_file.write(str(i) + " ")
