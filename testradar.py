@@ -152,7 +152,7 @@ if __name__ == "__main__":
     type_of_data = args.type
         
     ports = serial.tools.list_ports.comports()
-    arduino_com_port = find_arduino_comport(ports)
+    arduino_com_port = find_arduino_com_port(ports)
 
     ser = serial.Serial(arduino_com_port, 115200, timeout=0.05) #sets up serial connection (make sure baud rate is correct - matches Arduino)
 
